@@ -8,10 +8,14 @@ export default function App() {
   * Just a state variable we use to store our user's public wallet.
   */
   const [currentAccount, setCurrentAccount] = useState("");
+  /*
+   * All state property to store all waves
+   */
+  const [allWaves, setAllWaves] = useState([]);
   /**
    * Create a variable here that holds the contract address after you deploy!
    */
-  const contractAddress = "0xD7c4EA7E2592975c910e6D2A74E57aB838597889";
+  const contractAddress = "0x7F5B2919E686f254F79b8D803af4e99D671D8E64";
   /**
    * Create a variable here that references the abi content!
    */
@@ -74,6 +78,49 @@ export default function App() {
     checkIfWalletIsConnected();
   }, [])  
 
+  /*
+   * Create a method that gets all waves from your contract
+   */
+  const getAllWaves = async () => {
+    try {
+      const { ethereum } = window;
+      if (ethereum) {
+        const provider = new ethers.providers.Web3Provider(ethereum);
+        const signer = provider.getSigner();
+        const wavePortalContract = new ethers.Contract(contractAddress, contractABI, signer);
+
+        /*
+         * Call the getAllWaves method from your Smart Contract
+         */
+        const waves = await wavePortalContract.getAllWaves();
+        console.log("Waves returned from blockchain = ", waves);
+        
+
+        /*
+         * We only need address, timestamp, and message in our UI so let's
+         * pick those out
+         */
+        let wavesCleaned = [];
+        waves.forEach(wave => {
+          wavesCleaned.push({
+            address: wave.waver,
+            timestamp: new Date(wave.timestamp * 1000),
+            message: wave.message
+          });
+        });
+
+        /*
+         * Store our data in React State
+         */
+        setAllWaves(wavesCleaned);
+      } else {
+        console.log("Ethereum object doesn't exist!")
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   const wave = async () => {
     try {
       const { ethereum } = window;
@@ -88,7 +135,7 @@ export default function App() {
         /*
         * Execute the actual wave from your smart contract
         */
-        const waveTxn = await wavePortalContract.wave();
+        const waveTxn = await wavePortalContract.wave('this is a message');
         console.log("Mining...", waveTxn.hash);
 
         await waveTxn.wait();
@@ -127,7 +174,16 @@ export default function App() {
           <button className="waveButton" onClick={connectWallet}>
             Connect Wallet
           </button>
-        )}        
+        )}
+
+        {allWaves.map((wave, index) => {
+          return (
+            <div key={index} style={{ backgroundColor: "OldLace", marginTop: "16px", padding: "8px" }}>
+              <div>Address: {wave.address}</div>
+              <div>Time: {wave.timestamp.toString()}</div>
+              <div>Message: {wave.message}</div>
+            </div>)
+        })}
       </div>
     </div>
   );
