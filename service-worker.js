@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/eth-waveportal/precache-manifest.117c6fcfbec04ad5ee5b386a1de2588d.js"
+  "/eth-waveportal/precache-manifest.e783700c81ced83850386e2055346cec.js"
 );
 
 self.addEventListener('message', (event) => {
