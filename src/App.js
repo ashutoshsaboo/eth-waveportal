@@ -109,7 +109,7 @@ export default function App() {
         console.log("Retrieved total wave count...", await count.toNumber());
         console.log("Wave Portal contract: ", wavePortalContract)
 
-        let count = await wavePortalContract.getTotalWaves();
+        count = await wavePortalContract.getTotalWaves();
         console.log("Retrieved total wave count...", await count.toNumber());
 
         const waveTxn = await wavePortalContract.wave("test message");
