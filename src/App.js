@@ -98,6 +98,7 @@ export default function App() {
       console.log("Ethereum object = ", ethereum)
 
       if (ethereum) {
+        console.log("Ethereum object is non null proceeding ahead with txn")
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
         const wavePortalContract = new ethers.Contract(contractAddress, wavePortal.abi, signer);
