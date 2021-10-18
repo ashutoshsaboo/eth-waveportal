@@ -11,9 +11,14 @@ export default function App() {
   /**
    * Create a variable here that holds the contract address after you deploy!
    */
-   const contractAddress = "0xD7c4EA7E2592975c910e6D2A74E57aB838597889";
+  const contractAddress = "0xD7c4EA7E2592975c910e6D2A74E57aB838597889";
+  /**
+   * Create a variable here that references the abi content!
+   */
+  const contractABI = abi.abi;
   
-  const checkIfWalletIsConnected = () => {
+
+  const checkIfWalletIsConnected = async () => {
     try {
       const { ethereum } = window;
       
