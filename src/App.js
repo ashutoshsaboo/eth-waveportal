@@ -122,9 +122,10 @@ export default function App() {
   }
 
   const wave = async () => {
+    console.log("Enter wave method")
     try {
       const { ethereum } = window;
-
+      console.log("Ethereum object = ", ethereum)
       if (ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
