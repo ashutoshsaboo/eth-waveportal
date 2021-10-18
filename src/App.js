@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import './App.css';
-import abi from './utils/WavePortal.json'
+import wavePortal from './utils/WavePortal.json';
 
 export default function App() {
   /*
@@ -15,12 +15,7 @@ export default function App() {
   /**
    * Create a variable here that holds the contract address after you deploy!
    */
-  const contractAddress = "0x7F5B2919E686f254F79b8D803af4e99D671D8E64";
-  /**
-   * Create a variable here that references the abi content!
-   */
-  const contractABI = abi.abi;
-  
+  const contractAddress = "0x7F5B2919E686f254F79b8D803af4e99D671D8E64";  
 
   const getAllWaves = async () => {
     try {
