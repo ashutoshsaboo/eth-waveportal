@@ -100,8 +100,11 @@ export default function App() {
       if (ethereum) {
         console.log("Ethereum object is non null proceeding ahead with txn")
         const provider = new ethers.providers.Web3Provider(ethereum);
+        console.log("Provider: ", provider)
         const signer = provider.getSigner();
+        console.log("Signer: ", signer)
         const wavePortalContract = new ethers.Contract(contractAddress, wavePortal.abi, signer);
+        console.log("Wave Portal contract: ", wavePortalContract)
 
         let count = await wavePortalContract.getTotalWaves();
         console.log("Retrieved total wave count...", count.toNumber());
