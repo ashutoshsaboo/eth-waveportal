@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/eth-waveportal/static/css/main.0e632e19.chunk.css",
-    "main.js": "/eth-waveportal/static/js/main.c4a131d5.chunk.js",
-    "main.js.map": "/eth-waveportal/static/js/main.c4a131d5.chunk.js.map",
+    "main.js": "/eth-waveportal/static/js/main.02371517.chunk.js",
+    "main.js.map": "/eth-waveportal/static/js/main.02371517.chunk.js.map",
     "runtime-main.js": "/eth-waveportal/static/js/runtime-main.7e917e24.js",
     "runtime-main.js.map": "/eth-waveportal/static/js/runtime-main.7e917e24.js.map",
     "static/js/2.fe4bd1c3.chunk.js": "/eth-waveportal/static/js/2.fe4bd1c3.chunk.js",
     "static/js/2.fe4bd1c3.chunk.js.map": "/eth-waveportal/static/js/2.fe4bd1c3.chunk.js.map",
     "index.html": "/eth-waveportal/index.html",
-    "precache-manifest.fef333daa65c8b22cb3402343b1d9b55.js": "/eth-waveportal/precache-manifest.fef333daa65c8b22cb3402343b1d9b55.js",
+    "precache-manifest.0ee1e2295ab917811db95794f986be60.js": "/eth-waveportal/precache-manifest.0ee1e2295ab917811db95794f986be60.js",
     "service-worker.js": "/eth-waveportal/service-worker.js",
     "static/css/main.0e632e19.chunk.css.map": "/eth-waveportal/static/css/main.0e632e19.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.7e917e24.js",
     "static/js/2.fe4bd1c3.chunk.js",
     "static/css/main.0e632e19.chunk.css",
-    "static/js/main.c4a131d5.chunk.js"
+    "static/js/main.02371517.chunk.js"
   ]
 }
