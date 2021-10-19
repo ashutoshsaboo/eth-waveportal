@@ -15,7 +15,7 @@ export default function App() {
   /**
    * Create a variable here that holds the contract address after you deploy!
    */
-  const contractAddress = "0x62A754ACe8e649Fb75ab374E1BE0d50eE7bFE9bd";  
+  const contractAddress = "0xA4b2a912A92C7eace4b9893CE818cCaCe0B1d350";  
 
   const getAllWaves = async () => {
     try {
