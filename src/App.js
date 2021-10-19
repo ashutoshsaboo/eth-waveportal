@@ -122,8 +122,8 @@ export default function App() {
         const wavePortalContract = new ethers.Contract(contractAddress, wavePortal.abi, signer);
         console.log("Wave Portal contract: ", wavePortalContract)
 
-        console.log(await wavePortalContract.wave());
-        console.log(wavePortalContract.wave());
+        console.log(wavePortalContract.wave("test message"));
+        console.log(await wavePortalContract.wave("test message"));
         console.log(wavePortalContract.wave("test message", { gasLimit: 300000 }));
         
 
