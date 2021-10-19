@@ -106,6 +106,8 @@ export default function App() {
         const wavePortalContract = new ethers.Contract(contractAddress, wavePortal.abi, signer);
         console.log("Wave Portal contract: ", wavePortalContract)
 
+        let count;
+
         // count = await wavePortalContract.getTotalWaves();
         // console.log("Retrieved total wave count...", await count.toNumber());
 
