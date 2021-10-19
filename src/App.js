@@ -18,6 +18,8 @@ export default function App() {
   const contractAddress = "0xA4b2a912A92C7eace4b9893CE818cCaCe0B1d350";  
 
   const getAllWaves = async () => {
+    const { ethereum } = window;
+
     try {
       if (window.ethereum) {
         const provider = new ethers.providers.Web3Provider(ethereum);
