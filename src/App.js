@@ -161,9 +161,13 @@ export default function App() {
         Hi, this is my ethereum smart contract - dapp project! Connect your Ethereum wallet and wave at me!
         </div>
 
-        <button className="waveButton" onClick={wave}>
-          Wave at Me
-        </button>
+        {
+          currentAccount && (
+            <button className="waveButton" onClick={wave}>
+              Wave at Me
+            </button>
+          )
+        }
 
         {/*
         * If there is no currentAccount render this button
