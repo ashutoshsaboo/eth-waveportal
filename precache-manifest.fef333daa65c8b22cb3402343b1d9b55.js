@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "efc3f627470df754afb233c1f5b7dab2",
+    "revision": "bcf1a0fd26920efb33090858be6f3261",
     "url": "/eth-waveportal/index.html"
   },
   {
