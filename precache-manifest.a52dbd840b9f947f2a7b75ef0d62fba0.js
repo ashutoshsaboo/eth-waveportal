@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1a90bdb91774453a9f4f1012436a5abb",
+    "revision": "08970e073dfc8f174fe648fed57796e1",
     "url": "/eth-waveportal/index.html"
   },
   {
-    "revision": "8d6c085f424990936140",
+    "revision": "4e5b804af3dbbba0407b",
     "url": "/eth-waveportal/static/css/main.0e632e19.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/eth-waveportal/static/js/2.fe4bd1c3.chunk.js"
   },
   {
-    "revision": "8d6c085f424990936140",
-    "url": "/eth-waveportal/static/js/main.02371517.chunk.js"
+    "revision": "4e5b804af3dbbba0407b",
+    "url": "/eth-waveportal/static/js/main.c03b08fc.chunk.js"
   },
   {
     "revision": "9a4581d8f18b4f34f559",
