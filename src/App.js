@@ -20,7 +20,7 @@ export default function App() {
   const getAllWaves = async () => {
     try {
       if (window.ethereum) {
-        const provider = new ethers.providers.Web3Provider
+        const provider = new ethers.providers.Web3Provider(ethereum);
         const signer = provider.getSigner();
         const wavePortalContract = new ethers.Contract(contractAddress, wavePortal.abi, signer);
 
@@ -37,6 +37,19 @@ export default function App() {
         });
 
         setAllWaves(wavesCleaned);
+
+        /**
+         * Listen in for emitter events!
+         */
+        wavePortalContract.on("NewWave", (from, timestamp, message) => {
+          console.log("NewWave", from, timestamp, message);
+
+          setAllWaves(prevState => [...prevState, {
+            address: from,
+            timestamp: new Date(timestamp * 1000),
+            message: message
+          }]);
+        });
       } else {
         console.log("Ethereum object doesn't exist!")
       }
