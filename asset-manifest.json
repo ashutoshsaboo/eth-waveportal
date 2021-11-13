@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/eth-waveportal/static/css/main.0e632e19.chunk.css",
-    "main.js": "/eth-waveportal/static/js/main.36d0feef.chunk.js",
-    "main.js.map": "/eth-waveportal/static/js/main.36d0feef.chunk.js.map",
-    "runtime-main.js": "/eth-waveportal/static/js/runtime-main.7e917e24.js",
-    "runtime-main.js.map": "/eth-waveportal/static/js/runtime-main.7e917e24.js.map",
-    "static/js/2.fe4bd1c3.chunk.js": "/eth-waveportal/static/js/2.fe4bd1c3.chunk.js",
-    "static/js/2.fe4bd1c3.chunk.js.map": "/eth-waveportal/static/js/2.fe4bd1c3.chunk.js.map",
-    "index.html": "/eth-waveportal/index.html",
-    "precache-manifest.83bcb2b5418bc03de47a45243353be31.js": "/eth-waveportal/precache-manifest.83bcb2b5418bc03de47a45243353be31.js",
-    "service-worker.js": "/eth-waveportal/service-worker.js",
-    "static/css/main.0e632e19.chunk.css.map": "/eth-waveportal/static/css/main.0e632e19.chunk.css.map"
+    "main.css": "/web3/waveportal/static/css/main.0e632e19.chunk.css",
+    "main.js": "/web3/waveportal/static/js/main.36d0feef.chunk.js",
+    "main.js.map": "/web3/waveportal/static/js/main.36d0feef.chunk.js.map",
+    "runtime-main.js": "/web3/waveportal/static/js/runtime-main.6da7de23.js",
+    "runtime-main.js.map": "/web3/waveportal/static/js/runtime-main.6da7de23.js.map",
+    "static/js/2.fe4bd1c3.chunk.js": "/web3/waveportal/static/js/2.fe4bd1c3.chunk.js",
+    "static/js/2.fe4bd1c3.chunk.js.map": "/web3/waveportal/static/js/2.fe4bd1c3.chunk.js.map",
+    "index.html": "/web3/waveportal/index.html",
+    "precache-manifest.a47b294a5c492db91a1fabeb830bcbee.js": "/web3/waveportal/precache-manifest.a47b294a5c492db91a1fabeb830bcbee.js",
+    "service-worker.js": "/web3/waveportal/service-worker.js",
+    "static/css/main.0e632e19.chunk.css.map": "/web3/waveportal/static/css/main.0e632e19.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.7e917e24.js",
+    "static/js/runtime-main.6da7de23.js",
     "static/js/2.fe4bd1c3.chunk.js",
     "static/css/main.0e632e19.chunk.css",
     "static/js/main.36d0feef.chunk.js"
